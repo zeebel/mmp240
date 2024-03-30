@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../exercise2"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mmp240"
+	}
+}
