@@ -1,0 +1,75 @@
+#wrapper {
+    max-width: 1200px;
+    margin:0 auto;
+    background-color: white;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+header{
+   
+    background-image: url("images/gambit photos/gambitchess.jpeg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding: 7em;
+}
+/*about page*/
+
+
+main{margin-bottom: 3em;}
+
+.TV-MA{border-style: solid;padding: 0 3px;}
+
+button{background-color:black;color: white;border:none;padding:10px;border-radius: 5px;}
+
+p{margin-bottom: 1em; line-height: 1.2em;}
+
+.col{width:48%;margin-left: 10px;margin-right: 10px;}
+
+.col-left{float:left;}
+.box {
+  width: 1080px;
+  height: 30px;
+  border: 1px solid white;
+  padding: 5px;
+  margin: 5px;}
+
+
+footer{clear:both;}
+
+h1 {font-size:1em;}
+h2 {font-size:20px;font-family: Arial, Helvetica, sans-serif;}
+h3 {font-size:30px;font-family: Georgia, 'Times New Roman', Times, serif;}
+ul {
+    list-style: none;
+    display: inline;
+    text-decoration: none;
+    color: black;
+    
+  }
+  
+  li {
+    display: inline-block;
+    margin-right: 10px;
+    
+  }
+  /*navigation*/
+
+  nav{background-color: grey;}
+  nav a{color:black; text-decoration: none;font-size: 12pt;
+    margin-bottom: 2em; margin-right: 5em;
+  }
+  
+  nav li{
+    display:inline-block;
+    margin-right:10px;
+    margin-left:10px;
+    margin-bottom:5px;
+  }
+
+    
+ /*Episodes*/
+ 
+  .episode-card{width: 24%;margin-right: 1%;}
+  .episodes{display:flex; flex-direction:row;flex-wrap: wrap;}
+  .img-responsive{width:100%;}
