@@ -1,0 +1,66 @@
+* table of contents *
+#wrapper{max-width: 1200px;
+    padding:1em;
+margin-top: 50px;
+border:solid 1px black;
+}
+
+p,h1,h2,h3,h4{margin-bottom: 1em;color:black}
+
+h1,h2,h3,h3{font-weight: bold;}
+
+/*utilities*/
+
+
+/*header and top navigation*/
+
+.menu{display:none;}
+.site-header{display:flex;justify-content: space-between;}
+.menu-icon {display:none;
+}
+.show-menu{background-color: none;
+border:none;}
+
+.search-programs{
+    min-height: 8ems;
+    border: solid 1px #ccc;
+    border-radius: 10px;
+    padding: 1em;
+    margin-bottom: 1em; 
+}
+
+@media (min-width:768px){
+    .show-menu{
+    display:none;
+}
+.menu{display:flex;
+}
+.menu li{display:inline;
+margin-right:2em;}
+}
+ /* Closing media query */
+*/typography/
+
+
+li.dropdown ul{display: none;}
+.dropdown ul{
+    width: 30%;
+    position: relative;
+    border:solid;
+    border-radius: 5px;
+    padding: 5px;
+}
+main{display:grid;}
+.float-right{float:right;}
+
+.event{grid-column-start: (4);}
+
+.program{display:block;}
+
+.program-layout{
+    display:grid;
+    grid-template-columns: repeat (4, 1fr);
+    grid-gap: 1em;
+}
+
+
