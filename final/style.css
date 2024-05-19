@@ -2,17 +2,36 @@
 #wrapper{max-width: 1200px;
     padding:1em;
 margin-top: 50px;
+
 border:solid 1px black;
+
 }
 
-p,h1,h2,h3,h4{margin-bottom: 1em;color:black}
+/*typography*/
+p,h2,h3,h4{margin-bottom: 1em;color:black;}
+
+
 
 h1,h2,h3,h3{font-weight: bold;}
+
+li,a{text-decoration: none;
+color: black;list-style: none;
+}
+
 
 /*utilities*/
 
 
 /*header and top navigation*/
+.dropdown{
+    background-color:rgb(118, 102, 188);
+    border-color: black;
+    padding: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+    text-align: center;
+    
+}
 
 #menu{display:none;}
 .site-header{display:flex;justify-content: space-between;}
@@ -20,14 +39,45 @@ h1,h2,h3,h3{font-weight: bold;}
 .show-menu{background-color: none;
 border:none;}
 
+
 .search-programs{
     min-height: 8ems;
     border: solid 1px #ccc;
     border-radius: 10px;
     padding: 1em;
-    margin-bottom: 1em; 
+    margin-bottom: 1em;
+    width: 100%; 
 }
-.main-menu li{display:inline-block;}
+
+
+.hero-banner{
+    background-image:url(images/queenscollege.jpeg);
+    height: 50%;
+background-position: center;
+background-repeat: no-repeat;
+padding: 150px;
+}
+
+.hero-text{
+    text-align:center;
+    position:relative;
+    background-color: rgb(118, 102, 188);
+    padding: 20px;
+
+}
+.img-responsive{width:100%;
+padding: 10px,10,10,10;}
+
+.news{margin-right: 50%;
+}
+    
+
+
+
+
+
+
+
 
 @media (min-width:768px){
     .show-menu{
@@ -36,37 +86,85 @@ border:none;}
 #menu{display:flex;
 }
 .menu li{
-margin-right:2em;}
+margin-right:2em;
+}
 
 .menu-icon {display:none;
 }
-
-
-/*typography*/
-
-
+.main-menu{color:black;
+    text-decoration: none;}
+.main-menu ul{
+    display:flex;
+    justify-content: space-between;
+    
+}
 li.dropdown ul{display: none;}
-.dropdown ul{
-    width: 30%;
+li.dropdown:hover ul{display: block;
+}
+ 
+
+
+li.dropdown{
     position: relative;
+    width:30%;
+   
+    
+    
+    
+}
+
+.dropdown ul{
+    width: 100%;
+    position: absolute;
     border:solid;
     border-radius: 5px;
     padding: 5px;
+    background-color: #ffffff;
+    
+  
+  
+    
 }
+
+
+
+
+
+
+
 main{display:grid;}
+
 .float-right{float:right;}
 
-.event{grid-column-start:4;}
+.events{grid-column-start:4;
+   
+}
 
-.program{display:block;}
+.program{display:block;
+    flex: 1; 
+    height: 90%; 
+    text-align: center;  
+    border: 1px solid #ccc; 
+  }
+   
 
 .program-layout{
     display:grid;
-    grid-template-columns: repeat (4, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
+    border: 5px solid rgb(118, 102, 188); 
+    width: 100%; 
+    height: auto; 
+    align-items: center; 
+    
 }
-.menubar{display:flex;
+.menubar{
+display:flex;
 margin:0;
-padding:0;}
+padding:0;
+align-content: center;}
+
+a:hover { color: blue;font-weight: 900;}
 }
- /* Closing media query */
+/* Closing media query */
+
